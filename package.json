@@ -2,8 +2,8 @@
   "name": "@mrticketing/common",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
     "build/**/*"
   ],
