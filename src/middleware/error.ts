@@ -21,11 +21,13 @@ export const errorHandler = (
 ) => {
   let errorMessage: SerializedError;
   if (err instanceof BaseError) errorMessage = err.serialize();
-  else
+  else {
+    console.error(err);
     errorMessage = {
       message: "Something went wrong!",
       status: 500,
       details: [],
     };
+  }
   return res.status(errorMessage.status).send(errorMessage);
 };
